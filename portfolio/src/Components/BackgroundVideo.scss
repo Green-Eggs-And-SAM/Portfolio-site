@@ -1,0 +1,16 @@
+.videoPos {
+    position: fixed;
+    object-fit: cover;
+
+    transform: translate(-50%, -50%);
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.video-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    z-index: 0;
+}
