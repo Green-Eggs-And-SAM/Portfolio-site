@@ -1,17 +1,19 @@
-import "./Home.scss";
+import "./WebDev.scss";
 import BackgroundVideo from "../Components/BackgroundVideo";
 import Clock from "../Components/Clock";
 import videoLight from "../Assets/bg.mp4";
 
-function Home() {
+function WebDev() {
     return (
         <>
             <BackgroundVideo video={videoLight} />
             <main className="UI__Layer">
-                <h1>Sam Alexander</h1>
-                <Clock />
+                <header className="title">
+                    <h1>Sam Alexander</h1>
+                    <Clock />
+                </header>
             </main>
         </>
     );
 }
-export default Home;
+export default WebDev;

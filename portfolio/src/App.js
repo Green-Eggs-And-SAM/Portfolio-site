@@ -1,11 +1,16 @@
 import "./App.css";
-import Home from "./Pages/Home";
-
+import WebDev from "./Pages/WebDev";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// https://codepen.io/vihanga/pen/gOmXvRr
 function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <Home />
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<WebDev />} />
+                    </Routes>
+                </BrowserRouter>
             </header>
         </div>
     );

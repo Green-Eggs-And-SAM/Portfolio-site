@@ -1,10 +1,9 @@
 import "./BackgroundVideo.scss";
-import video from "../Assets/bg.mp4";
 
 function BackgroundVideo(props) {
-    console.log(video);
     return (
         <div className={`video-container `}>
+            <div className={props.light ? `light-bg` : `dark-bg`}></div>
             <video
                 src={props.video}
                 autoPlay
