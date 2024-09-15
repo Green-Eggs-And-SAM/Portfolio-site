@@ -1,19 +1,23 @@
 import "./dock.scss";
+import { useEffect } from "react";
 
 function Dock() {
-    let icons = document.querySelectorAll(".ico");
-    let length = icons.length;
-
-    icons.forEach((item, index) => {
-        item.addEventListener("mouseover", (e) => {
-            focus(e.target, index);
-        });
-        item.addEventListener("mouseleave", (e) => {
-            icons.forEach((item) => {
-                item.style.transform = "scale(1)  translateY(0px)";
+    // let length = icons.length;
+    let icons;
+    useEffect(() => {
+        icons = document.querySelectorAll(".ico");
+        console.log(icons);
+        icons.forEach((item, index) => {
+            item.addEventListener("mouseover", (e) => {
+                focus(e.target, index);
+            });
+            item.addEventListener("mouseleave", (e) => {
+                icons.forEach((item) => {
+                    item.style.transform = "scale(1)  translateY(0px)";
+                });
             });
         });
-    });
+    }, []);
 
     const focus = (elem, index) => {
         console.log("focus");
