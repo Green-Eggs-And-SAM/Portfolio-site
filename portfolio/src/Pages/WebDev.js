@@ -2,7 +2,7 @@ import "./WebDev.scss";
 import BackgroundVideo from "../Components/BackgroundVideo";
 import Clock from "../Components/Clock";
 import videoLight from "../Assets/bg.mp4";
-import Dock from "../DockTest Components/dock";
+import Dock from "../DockAndMenu Components/dock";
 
 function WebDev() {
     return (

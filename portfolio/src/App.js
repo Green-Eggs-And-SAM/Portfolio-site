@@ -1,6 +1,6 @@
 import "./App.css";
 import WebDev from "./Pages/WebDev";
-import Dock from "./DockTest Components/dock";
+import Menu from "./DockAndMenu Components/menu";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // https://codepen.io/vihanga/pen/gOmXvRr
 function App() {
@@ -10,7 +10,7 @@ function App() {
                 <BrowserRouter>
                     <Routes>
                         <Route path="/" element={<WebDev />} />
-                        <Route path="/dock" element={<Dock />} />
+                        <Route path="/menu" element={<Menu />} />
                     </Routes>
                 </BrowserRouter>
             </header>
