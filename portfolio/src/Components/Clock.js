@@ -15,7 +15,7 @@ function Clock() {
         const hour = dateObject.getHours();
         let minute = dateObject.getMinutes();
         if (parseInt(minute) < 10) minute = "0" + minute;
-        const currentTime = hour + ":" + minute;
+        const currentTime = "   " + hour + ":" + minute;
         setTime(currentTime);
     }
 
